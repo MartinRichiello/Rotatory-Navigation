@@ -8,7 +8,7 @@ body{
     font-family: "Lato", sans-serif;
     font-weight: 900;
     font-style: normal;
-    background-color: #8e44ad;
+    background-color: #af7ac5;
     color: white;
     overflow-x: hidden;
     margin: 0;
@@ -26,8 +26,8 @@ body{
     padding: 50px;
 }
 
-.container.show-nav{
-    transform: rotate(-20deg);
+.container.show-nav .circle{
+    transform: rotate(-70deg);
 }
 
 
@@ -45,6 +45,10 @@ body{
     border-radius: 50%;
     position: relative;
     transition: transform 0.5s linear;
+}
+
+.container.show-nav{
+    transform: rotate(-20deg);
 }
 
 
@@ -78,35 +82,13 @@ body{
 }
 
 
-.content img{
-
-    max-width: 100%;
-}
-
-
-/*
-
-
-
-.container.show-nav .circle {
-    transform: rotate(-70deg);/*
-}
-
-
-
-
-
-
-
-
-
-
-
-.container.show-nav + nav li {
+.container.show-nav + nav li{
 
     transform: translateX(0);
-    transition-delay: 0.3;
+    transition-delay: 0.3s;
+
 }
+
 
 nav{
 
@@ -114,10 +96,7 @@ nav{
     bottom: 40px;
     left: 0px;
     z-index: 100;
-
-
 }
-
 
 nav ul{
 
@@ -125,7 +104,6 @@ nav ul{
     padding-left: 30px;
 
 }
-
 
 nav ul li {
 
@@ -138,6 +116,11 @@ nav ul li {
 
 }
 
+nav ul li i{
+
+    font-size: 20px;
+    margin-right: 10px;
+}
 
 nav ul li + li{
 
@@ -152,31 +135,19 @@ nav ul li + li + li {
     transform: translateX(-200%);
 }
 
-nav a{
 
-    color: white;
-    text-decoration: none;
-    transition: all 0.5s;
 
+.content img{
+
+    max-width: 100%;
 }
-
-
-nav a:hover{
-
-    color: #ff7979;
-    font-weight: bold;
-
-}
-
-
-
-
 
 .content{
 
     max-width: 1000px;
     margin: 50px auto;
 }
+
 
 .content h1{
     margin: 0;
@@ -185,14 +156,16 @@ nav a:hover{
 
 .content small{
 
-    color: #555;
+    color: white;
     font-style: italic;
 
 }
-
 
 .content p{
     color: #333;
     line-height: 1.5;
 }
+
+
+
 
